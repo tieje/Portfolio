@@ -1,0 +1,48 @@
+/12/8/2020
+
+Frontend
+- Typescript (We learn this on the way.)
+- Deno (3 days)
+- React (1 week)
+- Lighthouse for testing (1 day)
+- create a simple PWA application (3 days)
+- create a simple React Application (1 week)
+- Axios for accessing Django API (1 day)
+
+Backend
+- django (1 week)
+	- learn about login and logout functionality
+
+Database
+- FaunaDB (1 week)
+	- build something simple with serverless functions (1 week)
+
+Hosting
+- Heroku
+	- Have it point to my website if possible. If not possible, well. Oh well, I'd pay for heroku I guess.
+
+Total estimated time investment: 43 days, or about a month and a half, or maybe 2 months, IDK, I might just get hired before that point.
+
+Timeline
+#1. Frontend
+	- React Home Page
+	- React Application: a simple Timer
+	- PWA application: a simple cart that sells emotional desires such as Maslow's hierarchy of needs, fulfillment, hope (There is limited time bargain on hope), happiness, (you pay in seconds of time): Whatever's in your cart, a statement will fade in one at a time, telling you something that you need to hear and fulfill that desire.
+#2. Backend + Database
+	- REST API
+	- Set up FaunaDB
+
+12/9/2020
+
+- Get a simple static web page that just points to your current project for now and says that this website is currently under construction: Define ETA and technologies implemented
+	+ Figure out Heroku
+		# they had a pretty decent tutorial
+		# I've determined that they're limited to their database marketplace when it comes to info storage: in other words, it may not be possible to provision FaunaDB on the web instance
+	- create a temporary index file for the home Page
+		- Link repositories to your projects
+			- copy files and delete your keys to your Alpaca account
+	- create frontend and backend folder and set up their respective environments
+
+- Figure out Deno
+- Figure out Typescript
+
