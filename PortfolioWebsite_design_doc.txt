@@ -34,15 +34,28 @@ Timeline
 
 12/9/2020
 
-- Get a simple static web page that just points to your current project for now and says that this website is currently under construction: Define ETA and technologies implemented
++ Get a simple static web page that just points to your current project for now and says that this website is currently under construction: Define ETA and technologies implemented
 	+ Figure out Heroku
 		# they had a pretty decent tutorial
 		# I've determined that they're limited to their database marketplace when it comes to info storage: in other words, it may not be possible to provision FaunaDB on the web instance
-	- create a temporary index file for the home Page
-		- Link repositories to your projects
-			- copy files and delete your keys to your Alpaca account
-	- create frontend and backend folder and set up their respective environments
+	+ create a temporary index file for the home Page
+		+ Link repositories to your projects
+			+ copy files and delete your keys to your Alpaca account
+	+ create frontend and backend folder and set up their respective environments
 
-- Figure out Deno
-- Figure out Typescript
+12/10/2020
 
+12/11/2020
+
+- Build Front Page in React
+- Build React App
+	- Figure out Deno
+		# Because I'm not using Heroku to host my website temporarily, I can actually delve into Deno
+	- Figure out Typescript
+	- Figure out React
+
+Build PWA
+	- Figure out Lighthouse
+	- Figure out PWAs
+
+I have opted to have a placeholder website than can run more easily on Heroku.
