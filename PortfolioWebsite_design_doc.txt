@@ -333,9 +333,26 @@ Static site Portfolio blog
 		plugins
 			- 
 
-- Bundler:
-	- snowpack
+x Bundler:
+	x snowpack
 
 - CSS framework
-	- Bulma
+	- anim.xyz
+
+1/16/2021
+
+Wow... it's been an entire month. This project is looking doable. I only really need to learn Gatsby. anim.xyz and React are not too hard to learn. On second thought, it will be more useful to focus on learning C, TypeScript, and Python. The only problem, is that... I just prefer a real project to work on... So I guess I will work on this portfolio website, but there will be a significant amount of things to learn before even getting started.
+
+I think I'll leave the production build to gatsby since what I'm building is a static website and it will not need test out state.
+
+Rather than create my own template, I'll be opting to use a gatsby starter from their site library.
+
+https://www.gatsbyjs.com/starters/?v=2
+
+The big question now is... do I want to create a blog? I'm not sure. I'm dumb in some aspects but I'm smart in other aspect. I'm actually only slightly above-average. Well. I could just do the work involved. It will make me a better writer and force me to update my opinions. I think it will be an important aspect to write your own blog. You don't need to update it all the time. Just write a few posts or ideas that you think are important I guess. You do not need to give away your ideas. Rather, you can use your blog to learn about problems. It's like writing book reports for yourself.
+
+Eventually you can turn the blog into a book. The book might give you recognition. And so on... But it starts with you communicating with the world.
+It's a matter of becoming an expert in something.
+
+I'll give it a day to think things over.
 
