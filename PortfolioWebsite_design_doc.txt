@@ -59,3 +59,283 @@ Build PWA
 	- Figure out PWAs
 
 I have opted to have a placeholder website than can run more easily on Heroku.
+
+Because of the sheer amount of stuff I need to learn, I am NOT going to dig into PWAs.
+I'm going to need to cut out PWAs and Deno.
+Deno is still developing and is unstable.
+Node.js is widely adopted and is used by Snowpack, which is a bundler that I want to use.
+
+Frontend
+- TypeScript
+- React
+- Redux
+- GraphQL
+- Bulma
+- Node.js
+- Snowpack
+
+Backend
+- Django
+	- Django REST APIs
+- FaunaDB
+
+The order that I should probably learn:
+
+0. Practice five JavaScript problems every day on codewars.com
+
+1. Snowpack - Unbundled Development + Bundler
+	+ Go over documentation and tutorial to understand how this will integrate into your website
+		# the Hot Module Replacement (HMR) and Fast Refresh make this a very attractive bundler to use so I think I'll be sticking with it.
+			- HMR makes it so that only detected changes are made
+			- Fast Refresh makes it so that state remains the same after HMR
+	- if the react refresh issue is solved with TypeScript, then use this command:
+
+		npx create-snowpack-app portfolio --template @snowpack/app-template-react-typescript
+
+		Other wise use this command and we'll need to complete the project in JavaScript:
+
+		npx create-snowpack-app porfolio --template @snowpack/app-template-react
+		
+	- use the webpack plugin to bundle your app files
+
+		npm install --save-dev @snowpack/plugin-webpack
+
+		Add to plugins for your snowpack.config.json file
+		
+		"@snowpack/plugin-webpack",
+
+		Finally, run
+
+		npm run build
+
+2. Node.js - JS Runtime
+	+ Go over documentation and tutorial to understand how this will integrate into your website
+		# I'm only really concerned with Node.js as a package manager as far as I'm concerned.
+3. React - Frontend and App Framework
+	- build the skeleton of the website
+		- links to your Github projects
+4. Redux - Flux store method React App Support
+	# The React + Redux application is a store app that sells emotional needs (see above PWA)
+	- build the React+Redux App
+5. Bulma - CSS framework
+	- make things look pretty
+6. Django/Django REST APIs - Backend and REST API
+	- build the REST API
+7. FaunaDB - Cloud Storage Database
+	- learn how integrate FaunaDB into your REST API
+8. GraphQL - Frontend accessing backend API
+	- glue together Frontend and Backend
+
+12/12/2020
+
++ Learn about Snowpack
+	# I like Snowpack, but the TypeScript template does not work with react-refresh feature, so I'm going to use JavaScript instead.
+		# or perhaps, I should wait a bit before switching to Javascript. Let them reply to your inquiry first since you're just testing things right now.
+- practice five javascript problems on codewars.com
+
+12/13/2020
+
++ Learn Node.js and learn how to incorporate it into your website
+	# not a big deal since I won't be using JS server side.
+
+I'm not going to spend an entire day only on Node.js.
+It's time to bite the bullet and get back into React. Learning react again is... going to take some work. Like maybe a week.
+
+As far as I'm concerned, the React book I have is still solid on the basics of React.
+The syntax might change, but the basics are not going to change... much... I hope...
+I'll stick python and django
+
+I have determined that my portfolio website will actually be a static website with no APIs and no database attached.
+What I thought that I would be doing was actually way overkill.
+
+It's better to have a static website with minor blog entries.
+It will be minor blog entries because I do not intend to build a blog with an interactive community.
+The whole interactive community things would be overkill for my site.
+It would be far better to build an App that deserves an interactive community. But honestly... I would just use Github discussions.
+There are a lot of things that... don't need to be built from scratch. Like communities and website logins are handled by Google, Facebook, and Apple.
+
+The real innovation will be building PWAs.
+
+Therefore, the new portfolio website looks like:
+
+Static Website
+	Frameworks
+		- React
+		- Redux
+		- Bulma
+	Tools
+		- Node.js
+		- Snowpack
+
+The static website will contain:
+
+- Navbar
+	- Portfolio List
+		# Home page
+	- One Original React app (a store that sells emotional needs)
+	- Another Original React app Timeline app that creates a timeline
+		- I'd like to make a timeline of my coding journey.
+			- Minor Projects - shown as small dots
+			- Major Projects - shown as major as stars.
+			- Minor events - shown as Triangles
+			- Major events - shown as Squares
+			- Length of time things took: Red
+			- Vacation Time: Blue
+			- completed projects will be in Gray
+			- successful projects will be in color
+			- projects that span the same timeline will overlap on one another.
+			- each type of node is optionally viewed (checkmark)
+			- Condense mode
+			- Clicking on the color of the timeline will reveal the editable txt document associated.
+				- ToDos are minus signs
+				- achievements are plus signs
+				- a parser counts the number of plus signs at the beginning of newlines
+				- Each tabbed plus sign, adds a decimal digit
+		- starts from today in the middle. Can scroll up and down normally, or scroll quickly using a sidebar that is like a coding side bar
+		- monetize: sell this service to users for $1 per month.
+		- Marketing: Studies about Temporal comparisons being more healthy than social comparisons. Well... at this point, it's its own website.
+		- ability to share timelines. Timelines could be shared and verified by verified companies.
+		- Timelines can be shared, edited, by team members
+		- Make it as a progressive web app.
+
+	- Blog entries
+		- My blog 
+
+I think it will be very important to go through as much of the FullStack React Book as I can.
+It's better to take things slow than to go really fast.
+There are 684 pages that I need to go through.
+I should try to get through 50-100 pages per day and then learn TypeScript and how it looks like and works.
+Starting on page 30
+
+The new plan is to 
+- Spend the morning going through the FullStack React book. Get through 50-100 pages.
+- Attempt at writing the website in TypeScript
+
+Just do that every day.
+
+12/14/2020
+
+Alright, I think it's time to get this thing started.
+
+Commands
++ create snowpack react app template in typescript
+
+npx create-snowpack-app portfolio --template @snowpack/app-template-react-typescript
+
++ check for HMR and Fast Refresh
+
+npm start
+
++ install webpack plugin
+
+npm install --save-dev @snowpack/plugin-webpack
+
++ Add @snowpack/plugin-webpack to snowpack.config.json
+
++ install bulma
+
+npm install bulma
+
+- make links in your index.html file
+	- babel plugin browser translator
+	- babel-js transpiler to ES5
+
+- draw your website. Generally I want:
+	- Screen sized Hero banner of a picture I like, my name, brief introduction, contact information (I don't actually need a navbar)
+	- my portfolio projects, one half of screen is a picture representing each portfolio project and link to each project
+		- Each portfolio project will have its own Hero actually. Might as well, since I don't have many projects
+	- I'll probably just use the seed.js method for managing state since it's a static website
+	- Honestly it's just one big link to my github page.
+	- I'm not experienced enough to make any blog posts.
+	- I will need a navbar to showcase my Web Apps
+	- I guess my blog posts will be my philosophical ramblings. They'll be short and to the point. Maybe even bulleted.
+
+- Since you're just making a static site, look into Gatsby
+
+You can actually host your site on Github pages!!! I never knew!
+https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages
+
+
+https://www.youtube.com/watch?v=VoscwJ6MGsU
+
+gatsby vs create-react-app vs next.js
+
+- next.js uses serverside rendering
+	- react app is rendered on server
+	- needs a server to deliver content
+- create-react-app uses clientside rendering
+	- sends barebones html and the rest is rendered on the client
+- gatsby
+	- static
+	- build html ahead of time
+	- html comes from server
+	- static html
+
+Complexity
+
+- development difficulty, deployment complexity
+- Gatsby and Create-React-App is very simple
+	- easier deployment than Next.js
+- Next.js is not as simple
+	- you'll be paying for a lot more.
+	- if you don't need serverside do the others
+
+SEO - Search Engine Optimization
+- Gatsby and Next.js favored
+- not as good with Create-React-App
+
+Datasource updates
+- Next.js and Create-React-App favored
+- Gatsby is not as good because you'll need to build yourself every time there is a change
+	- building the site every second is not viable
+	- could dynamically fetch data but CRA does it better
+
+Do you need Good SEO?
+
+if no, use Create React App
+if yes, does the data for the project need to be updated frequently
+	- if yes,
+		use next.js
+	- if no,
+		use Gatsby
+		- blog, ecommerce, wordpress-type site
+
+Based on this information, I will be using Gatsby as the framework for my static website.
+My portfolio website will also be my blog to get better at coding.
+
+Navbar
+	- Homepage (either icon or just the word)
+		- Portfolio showcase
+	- Blog
+	- Contact info
+
+footer
+	- Contact info
+
+
+Static site Portfolio blog
+
+- hosting:
+	- netlify
+		- see if you can host from your domain
+	- github pages
+		# use as last resort
+	- surge
+		- see if you can host from your domain
+
+
+- app framework
+	- React
+
+- frontend framework
+	- Gatsby
+		- look at gatsby build, see if does the same thing as snowpack
+		plugins
+			- 
+
+- Bundler:
+	- snowpack
+
+- CSS framework
+	- Bulma
+
