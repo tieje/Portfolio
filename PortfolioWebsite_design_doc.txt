@@ -356,3 +356,18 @@ It's a matter of becoming an expert in something.
 
 I'll give it a day to think things over.
 
+1/17/2021
+
+It is my belief that I should dive into things that scare me, at least initially.
+
+First things first:
+
+- Convert all files to typescript.
+  - allows you to simultaneously determine what everything does
+  Introduction
+  https://www.gatsbyjs.com/docs/how-to/custom-configuration/typescript/
+
+  typescript plugin
+  https://www.gatsbyjs.com/plugins/gatsby-plugin-typescript/
+- change the css to anim.xyz and mess around with that
+- 
